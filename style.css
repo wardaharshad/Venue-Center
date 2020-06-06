@@ -4,7 +4,7 @@ body{
   font-family: "Roboto", sans-serif;
   background: url(bg2.jpg) no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   height: 100%;
 }
 
@@ -23,7 +23,9 @@ footer{
   font-size: 20px !important;
   font-weight: normal;
   align-items: baseline !important;
+  position: static;
 }
+
 
 .container{
   padding: 0;
@@ -76,6 +78,7 @@ footer{
 }
 .menu{
   padding-top: 150px;
+  margin-top: 20px;
 }
 #check:checked ~ .sidebar .profile_image{
   
@@ -85,14 +88,18 @@ footer{
   margin-left: 70px;
   position: absolute;
   display: block;
- 
 }
+
+
 .sidebar .profile_image{
   display: none;
 }
 
 .sidebar h4{
   display: none;
+}
+#check:checked ~ .logo-part{
+  background-color: #2f323a;
 }
 
 #check:checked ~ .sidebar h4{
@@ -217,20 +224,7 @@ label #sidebar_btn:hover{
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
-.animate_bounce{
-  position: absolute;
-  top: 40%;
-  right: 40%;
-  text-align: center;
-  transform: translate(-10%,-50%);
-  color: black;
-  font-weight: bold;
-  font-size: 40px;
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
+
 
 #check:checked ~ .content{
   margin-left: 150px;
@@ -238,6 +232,7 @@ label #sidebar_btn:hover{
 
 #check{
   display: none;
+  background-color: black;
 }
 
 .container {
@@ -286,6 +281,10 @@ fieldset{
   margin-left: 300px;
 
 }
+.profile_image{
+  border-radius: 100px;
+}
+
 .content3{
   color: #fff;
   background: #63738a;
@@ -297,7 +296,9 @@ fieldset{
   padding-top: 100px !important;
   position: static !important;
 }
-
+input[type=text]{
+  position: static !important;
+}
 /*Form */
 
 .content2{
@@ -402,6 +403,9 @@ fieldset{
     width: 400px;
     position: static !important;
   }
+  footer{
+    align-items: baseline;
+  }
 
   #check:checked ~ .content{
     margin-left: 50px;
@@ -411,6 +415,10 @@ fieldset{
     margin-left: 50px;
     width: 80%;
     position: static;
+  }
+  .content2{
+    margin-left: 40px !important;
+    width: 100%;
   }
 
   .container3{
@@ -427,110 +435,18 @@ fieldset{
     left: 100px;
     position: relative;
   }
+  .foot a i{
+    position: static !important;
+    
+  }
+  #checked :checked ~ footer .foot a i{
+    position: relative !important;
+    display: none;
+  }
   
   
 
  
-
-
-
-
-
-
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
