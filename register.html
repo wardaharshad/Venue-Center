@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+ 
+</head>
+<body background="bg3.jpg">
+    <div class="area">
+    </div>
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                <li class="has-subnav">
+                    <a href="venues.html">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Venues List
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="about.html">
+                       <i class="fa fa-info-circle fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="facilities.html">
+                        <i class="fa fa-sliders-h fa-2x"></i>
+                        <span class="nav-text">
+                            Bookings
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user fa-2x"></i>
+                        <span class="nav-text">
+                           Register
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                           Contact Us
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+
+   <div class="container">
+      <div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2>Register</h2>
+            <br /><br />
+            <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div><br><br>
+                    <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                </div>        	
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            </div>        
+            <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+            </div>
+        </form>
+        <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+      </div>
+   </div>
+
+   <div class="section-1">
+    <footer class="flex-footer">
+      <h2 class="flex-h2"><a href="https://wardaharshad.github.io/Venue-Center/">Venue Center</a></h2>
+      <div class="flex-item flex-social-links">
+        <a href="#"><i class="fab fa-facebook-f social-links"></i></a>
+        <a href="#"><i class="fab fa-twitter social-links"></i></a>
+        <a href="#/"><i class="fas fa-code-branch social-links"></i></a>
+        <a href="#"><i class="fab fa-youtube social-links"></i></a>
+        <a href="#"><i class="fab fa-instagram social-links"></i></a>
+      </div>
+      <div class="flex-item flex-links">
+        <p><a href="#">Dashboard</a> | <a href="#">About</a> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> |  <a href="#">Policies</a> | <a href="#">Public Records</a> | <a href="#">Regulations</a> | <a href="#">Event Venue News</a></p>
+      </div>
+      <div class="flex-item flex-copyright">venue-center@gmail.com | <a href="#">+92 000 0000000</a><br />
+        &copy; <a href="https://wardaharshad.github.io/Venue-Center/">Venue Center</a></div>
+    </footer>
+  </div>
+  <div class="section-2">
+    <footer>    
+      <div class="col-sm-12 sub-footer bg-primary">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-7 footer-item sub-item"><small>&copy; 2020 Copyright Venue Center. All Rights Reserved. </small></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+       
+  </body>
+    </html>
