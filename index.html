@@ -1,243 +1,142 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Sidebar Dashboard Template</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  </head>
-  <body>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
-    <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
-      <div class="left_area">
-        <h3>Coding <span>Snow</span></h3>
-      </div>
-      <div class="right_area">
-        <a href="contact.html" class="logout_btn">ignIn</a>
-      </div>
-    </header>
-
-
-    <!--header area end-->
-    <!--sidebar start-->
-    <div class="sidebar">
-      <div class="logo-part">
-      <center>
-        <img src="2.jpg" class="profile_image" alt="">
-        <h4>Venue-Center</h4>
-      </center>
-      </div>
-      <div class="menu">
-      <a href="index.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="content.html"><i class="fas fa-cogs"></i><span>Venues</span></a>
-      <a href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a>
-      <a href="message.html"><i class="fas fa-sliders-h"></i><span>Contact Us</span></a>
-      </div>
+ 
+</head>
+<body background="bg3.jpg">
+    <div class="area">
     </div>
-    <!--sidebar end-->
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                <li class="has-subnav">
+                    <a href="venues.html">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Venues List
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="about.html">
+                       <i class="fa fa-info-circle fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="facilities.html">
+                        <i class="fa fa-sliders-h fa-2x"></i>
+                        <span class="nav-text">
+                            Bookings
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user fa-2x"></i>
+                        <span class="nav-text">
+                           Register
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                           Contact Us
+                        </span>
+                    </a>
+                </li>
+                
 
-    <div class="content">
-      <div class="bg">
-        <center>Welcome To</center>
-        <center>Venue Center</center>
-        <br><br><br><br>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" style="background-image: url(bg1.jpg); background-size: 100%">
+    <div class="container">
+      <center><h1>Welcome To Venue Centre</h1>
+        <br>
+        <p>Its a venue where you can really feel a beauty.</p>
+        <br>
+        <a class="btn btn-info btn-lg==md" href="#" role="button">View more &raquo;</a></p>
+      </center>
       
-        <center>
-          Its a venue where you can really feel the beauty.
-          
-        </center>
+    </div>
+  </div>
 
-            <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-3">
-        <div class="foot mb-1 flex-center">
-          
+  <div class="section-1">
+    <footer class="flex-footer">
+      <h2 class="flex-h2"><a href="https://wardaharshad.github.io/Venue-Center/">Venue Center</a></h2>
+      <div class="flex-item flex-social-links">
+        <a href="#"><i class="fab fa-facebook-f social-links"></i></a>
+        <a href="#"><i class="fab fa-twitter social-links"></i></a>
+        <a href="#/"><i class="fas fa-code-branch social-links"></i></a>
+        <a href="#"><i class="fab fa-youtube social-links"></i></a>
+        <a href="#"><i class="fab fa-instagram social-links"></i></a>
+      </div>
+      <div class="flex-item flex-links">
+        <p><a href="#">Dashboard</a> | <a href="#">About</a> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> |  <a href="#">Policies</a> | <a href="#">Public Records</a> | <a href="#">Regulations</a> | <a href="#">Event Venue News</a></p>
+      </div>
+      <div class="flex-item flex-copyright">venue-center@gmail.com | <a href="#">+92 000 0000000</a><br />
+        &copy; <a href="https://wardaharshad.github.io/Venue-Center/">Venue Center</a></div>
+    </footer>
+  </div>
+  <div class="section-2">
+    <footer>    
+      <div class="col-sm-12 sub-footer bg-primary">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-7 footer-item sub-item"><small>&copy; 2020 Copyright Venue Center. All Rights Reserved. </small></div>
         </div>
       </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-
+    </footer>
   </div>
-  <!-- Footer Elements -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">
-    <center>
-
-      <!-- Facebook -->
-      <a class="fb-ic">
-        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!-- Twitter -->
-      <a class="tw-ic">
-        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!-- Google +-->
-      <a class="gplus-ic">
-        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!--Linkedin -->
-      <a class="li-ic">
-        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!--Instagram-->
-      <a class="ins-ic">
-        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!--Pinterest-->
-      <a class="pin-ic">
-        <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-      </a>
-      </center>
-      <br>© 2020 Copyright:
-    <a href="index.html"> venue-center.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-      
-      </div>
-    </div>
-
-    
 
 
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 
-
-
-
-    
-
-    
-
-        
-
-    
-    
-    
-
+       
   </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!---->
+    </html>

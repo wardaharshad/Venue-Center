@@ -1,147 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
+ 
 </head>
-<body>
-
-  <input type="checkbox" id="check">
-  <!--header area start-->
-  <header>
-    <label for="check">
-      <i class="fas fa-bars" id="sidebar_btn"></i>
-    </label>
-    <div class="left_area">
-      <h3>Coding <span>Snow</span></h3>
+<body background="bg3.jpg">
+    <div class="area">
     </div>
-    <div class="right_area">
-      <a href="contact.html" class="logout_btn">SignIn</a>
-    </div>
-  </header>
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                <li class="has-subnav">
+                    <a href="venues.html">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Venues List
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="about.html">
+                       <i class="fa fa-info-circle fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="facilities.html">
+                        <i class="fa fa-sliders-h fa-2x"></i>
+                        <span class="nav-text">
+                            Bookings
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="register.html">
+                        <i class="fa fa-user fa-2x"></i>
+                        <span class="nav-text">
+                           Register
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                           Contact Us
+                        </span>
+                    </a>
+                </li>
 
+            </ul>
 
-  <!--header area end-->
-  <!--sidebar start-->
-  <div class="sidebar">
-    <center>
-      <img src="2.jpg" class="profile_image" alt="">
-      <h4>Venue-Center</h4>
-    </center>
-    <div class="menu">
-    <a href="index.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-    <a href="content.html"><i class="fas fa-cogs"></i><span>Venues</span></a>
-    <a href="about.html"><i class="fas fa-info-circle"></i><span>About</span></a>
-    <a href="message.html"><i class="fas fa-sliders-h"></i><span>Contact Us</span></a>
-    </div>
-  </div>
-  <!--sidebar end-->
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+    <div class="container">
+        <!--Section: Contact v.2-->
+<section class="mb-4">
 
-  <div class="content2">
-  <div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-		<h2>Register</h2>
-		<p class="hint-text">Create your account. It's free and only takes a minute.</p>
-        <div class="form-group">
-			<div class="row">
-				<div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div><br><br>
-				<div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
-			</div>        	
-        </div>
-        <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-        </div>        
-        <div class="form-group">
-			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-		</div>
-		<div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
-        </div>
-    </form>
-	<div class="text-center">Already have an account? <a href="#">Sign in</a></div>
-  </div>
-
-  <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+  
     <div class="row">
+  
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+  
+                <!--Grid row-->
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+  
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+  
+                </div>
+                <!--Grid row-->
+  
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+  
+                <!--Grid row-->
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-12">
+  
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+  
+                    </div>
+                </div>
+                <!--Grid row-->
+  
+            </form>
+  
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Karachi, Pakistan.</p>
+                </li>
+  
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+92 000 0000000</p>
+                </li>
+  
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>venue-center@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+  
+    </div>
+  
+  </section>
+  <!--Section: Contact v.2-->
+    </div>
+      
+    </div>
+  </div>
 
-      <!-- Grid column -->
-      <div class="col-md-12 py-3">
-        <div class="mb-1 flex-center">
-          
+  <div class="section-1">
+    <footer class="flex-footer">
+      <h2 class="flex-h2"><a href="https://wardaharshad.github.io/Venue-Center/">Venue Center</a></h2>
+      <div class="flex-item flex-social-links">
+        <a href="#"><i class="fab fa-facebook-f social-links"></i></a>
+        <a href="#"><i class="fab fa-twitter social-links"></i></a>
+        <a href="#/"><i class="fas fa-code-branch social-links"></i></a>
+        <a href="#"><i class="fab fa-youtube social-links"></i></a>
+        <a href="#"><i class="fab fa-instagram social-links"></i></a>
+      </div>
+      <div class="flex-item flex-links">
+        <p><a href="#">Dashboard</a> | <a href="#">About</a> | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> |  <a href="#">Policies</a> | <a href="#">Public Records</a> | <a href="#">Regulations</a> | <a href="#">Event Venue News</a></p>
+      </div>
+      <div class="flex-item flex-copyright">venue-center@gmail.com | <a href="#">+92 000 0000000</a><br />
+        &copy; <a href="https://wardaharshad.github.io/Venue-Center/">Venue Center</a></div>
+    </footer>
+  </div>
+  <div class="section-2">
+    <footer>    
+      <div class="col-sm-12 sub-footer bg-primary">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-7 footer-item sub-item"><small>&copy; 2020 Copyright Venue Center. All Rights Reserved. </small></div>
         </div>
       </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">
-    <center>
-
-      <!-- Facebook -->
-      <a class="fb-ic">
-        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!-- Twitter -->
-      <a class="tw-ic">
-        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!-- Google +-->
-      <a class="gplus-ic">
-        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!--Linkedin -->
-      <a class="li-ic">
-        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!--Instagram-->
-      <a class="ins-ic">
-        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-      </a>
-      <!--Pinterest-->
-      <a class="pin-ic">
-        <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-      </a>
-      </center>
-      <br>© 2020 Copyright:
-    <a href="index.html"> venue-center.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-
+    </footer>
   </div>
 
-  
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 
-</body>
-</html>
+       
+  </body>
+    </html>
